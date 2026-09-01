@@ -26,7 +26,7 @@ Aim: 24 hours for the community to help with R bugs
  - Take a look at some bugs
  - See if you can contribute!
 
-???
+
 
 The Bug BBQ is an opportunity for the community to get together and help out with bugs in R.
 
@@ -38,9 +38,11 @@ For all participants, it will be a chance to chat with experienced contributors,
 
 # bugs.r-project.org
 
-![Screenshot of R's Bugzilla showing an HTML table with the results of a search for open bugs, in order of the most recent change, with the newest at the top.](bug_list.png)
+<center>
+<img src="bug_list.png" alt="Screenshot of R's Bugzilla showing an HTML table with the results of a search for open bugs, in order of the most recent change, with the newest at the top." style="margin-bottom:20px">
+</center>
 
-???
+
 
 Bugs in R are tracked in R's Bugzilla, which can be found at bugs.r-project.org. This screen shot shows the results of a search for open bugs, in order of the most recent change, with the newest at the top.
 
@@ -48,8 +50,10 @@ Bugs in R are tracked in R's Bugzilla, which can be found at bugs.r-project.org.
 
 # Bug report
 
-![Screenshot of a bug report. We just see the start of the report here, with the metadata. In this case the bug was reported by Martin Maechler.](bug_report.png)
-???
+<center>
+<img src="bug_report.png" alt="Screenshot of a bug report. We just see the start of the report here, with the metadata. In this case the bug was reported by Martin Maechler." style="margin-bottom:20px">
+</center>
+
 
 Here is an example bug report on Bugzilla. We just see the start of the report here, with the metadata. In this case the bug was reported by Martin Maechler.
 
@@ -57,8 +61,10 @@ Here is an example bug report on Bugzilla. We just see the start of the report h
 
 # Bug report comments
 
-![Screenshot of a bug report comments. The first comment is the bug report itself, from Martin Maechler. This is followed by a further comment in reply, from Colin Fay.](bug_report_comments.png)
-???
+<center>
+<img src="bug_report_comments.png" alt="Screenshot of a bug report comments. The first comment is the bug report itself, from Martin Maechler. This is followed by a further comment in reply, from Colin Fay." style="margin-bottom:20px">
+</center>
+
 
 If we scroll down, we can see the comments. The first comment is the bug report itself. There maybe be further comments in reply, discussing the bug and potentially how to fix it.
 
@@ -66,8 +72,10 @@ If we scroll down, we can see the comments. The first comment is the bug report 
 
 # Proposed patch
 
-![Screenshot of a bug report with the attachments section circled in red.](bug_report_patch.png)
-???
+<center>
+<img src="bug_report_patch.png" alt="Screenshot of a bug report with the attachments section circled in red." style="margin-bottom:20px">
+</center>
+
 
 Sometimes there will be a proposed patch attached to the bug report. This can be found in the attachments section under the metadata.
 
@@ -77,8 +85,10 @@ The patch is a diff between the proposed changes and the current source code. Cl
 
 # Patch contents
 
-![Screenshot of the diff for an attached patch displayed in the browser. On the left is the original source code from an R file. On the right is the proposed update to that code. The lines of code that have been modified are coloured to highlight where changes have been made. ](bug_report_diff.png)
-???
+<center>
+<img src="bug_report_diff.png" alt="Screenshot of the diff for an attached patch displayed in the browser. On the left is the original source code from an R file. On the right is the proposed update to that code. The lines of code that have been modified are coloured to highlight where changes have been made." style="margin-bottom:20px">
+</center>
+
 
 In this Diff viewer, the original source code is on the left and the proposed update is on the right. The lines of code that have been modified are highlighted.
 
@@ -86,9 +96,11 @@ In this Diff viewer, the original source code is on the left and the proposed up
 
 # github.com/r-devel/bug-bbq
 
-![Screenshot of the r-devel/bug-bbq GitHub repository. The repository contains a few code files and a README.md](bug-bbq_GitHub.png)
+<center>
+<img src="bug-bbq_GitHub.png" alt="Screenshot of the r-devel/bug-bbq GitHub repository. The repository contains a few code files and a README.md" style="margin-bottom:20px">
+</center>
 
-???
+
 
 For the Bug BBQ, we will be treating R's Bugzilla as read only. We have set up a GitHub repo for this event, to allow informal discussion of bugs and to track any contributions. This screenshot shows the homepage for that repo, which you can find at github.com/r-devel/bug-bbq. Scroll down to see the README which contains instructions on how to participate. The rest of this presentation will give an overview of these instructions.
 
@@ -96,8 +108,10 @@ For the Bug BBQ, we will be treating R's Bugzilla as read only. We have set up a
 
 # Work on issues 
 
-![Screenshot of the Issues page of the bug-bbq repo. ](issues.png)
-???
+<center>
+<img src="issues.png" alt="Screenshot of the Issues page of the bug-bbq repo." style="margin-bottom:20px">
+</center>
+
 
 On the issues page of the bug-bbq repo, issues have been created that correspond to one or more bugs on Bugzilla. The issues have been labelled to help you find bugs to work on. The labels that start with capital letters, e.g. Models or Documentation, describe the general topic of the bug. The labels in lower case describe required actions. We'll go through these action labels in more detail.
 
@@ -110,7 +124,7 @@ These bug reports require a minimal reproducible example that demonstrates the b
 * You may need a specific version of R to reproduce the bug
 * Post your reprex on the GitHub issue, adding `@r-devel/triagers` 
 
-???
+
 
 Bugs labelled "needs reprex" require a minimal reproducible example to reproduce the bug, using *only* core R packages.
 
@@ -130,7 +144,7 @@ For these bugs, we need to check if they are still an issue in the current R dev
     * Note the exact version of R-devel that you checked
     * Tag `@r-devel/triagers`
 
-???
+
 
 Bugs labelled "check in r-devel", need checking if the bug is still an issue in R-devel, the development version of R.
 
@@ -151,7 +165,7 @@ Once the bug is reproducible in the development version of R, the cause of the b
  - The bug category (`not a bug`, `wishlist`, or `confirmed`)
  - Tag `@r-devel/triagers`
 
-???
+
 
 For bugs labelled "needs diagnosis" we need to diagnose where and why the buggy behaviour occurs.
 
@@ -170,7 +184,7 @@ Once the cause of the bug is known, there should be a discussion about how to fi
 * Add a comment to the GitHub issue corresponding to the bug.
 * Follow the repo to be notified of any responses and respond if you have further comment, or react with emoji.
 
-???
+
 
 For bugs labelled "discuss fix", we need help deciding how to fix the bug. 
 
@@ -192,7 +206,7 @@ Once there is agreement from a member of R Core on how to fix a bug, you can imp
  - Tag @r-devel/triagers
 
 
-???
+
 
 For bugs labelled "needs patch" an R Core member has agreed how the bug should be fixed and you can implement the fix.
 
@@ -212,7 +226,7 @@ Once a patch is proposed, it can be helpful for others to review the patch.
     * Does the patch resolve the bug?
     * Do you have any feedback that could improve the patch?
 
-???
+
 
 Bugs labelled "needs review" have a code or documentation patch that is ready for review.
 
@@ -229,7 +243,7 @@ You are welcome to review the open bugs on Bugzilla and add corresponding issues
 * Follow the standard format for the title
 * Ask a member of the [Triage team](https://github.com/orgs/r-devel/teams/triagers/members) to add labels
 
-???
+
 
 You are welcome to review the open bugs on Bugzilla and add corresponding issues on the bug-bbq GitHub repo for bugs that you would like to work on.
 
@@ -251,7 +265,7 @@ There are 3 Zoom sessions of 4 hours
  - Join a breakout room & work together
  - Get help in the main room
  
-???
+
 
 You can work on bugs anytime during the 24 hour event 
 
@@ -272,7 +286,7 @@ The bug-bbq README contains help on:
  
 For further help, please ask on Zoom or in the Slack!
 
-???
+
 
 The bug-bbq README contains help on:
  - Accessing different versions of R, including R-devel
@@ -284,13 +298,13 @@ The bug-bbq README contains help on:
 For further help, please ask on Zoom or in the Slack!
 
 ---
+# Let's go!
+<div class="center">
 
-.center[# Let's go!
-```{r, fig.alt = "Cartoon of a rocket launching", out.width = "40%", echo = FALSE}
-knitr::include_graphics("reshot-icon-rocket-ZQTKM9NG32.svg")
-```
-]
 
-???
+
+<img src="reshot-icon-rocket-ZQTKM9NG32.svg" alt="Cartoon of a rocket launching" style="width:20%; margin-bottom:10px;">
+
+</div>
 
 So, let's go! We look forward to meeting you during the organized sessions and hope that together we are able to make progress on open bugs in R.
